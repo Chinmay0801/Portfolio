@@ -215,7 +215,7 @@ const statObserver = new IntersectionObserver(entries => {
       const nums = entry.target.querySelectorAll(".stat-num");
       nums.forEach(num => {
         const text = num.textContent;
-        if (text.includes("5")) animateCounter(num, 5, "+");
+        if (text.includes("7")) animateCounter(num, 7, "+");
         else if (text.includes("8")) animateCounter(num, 8, "+");
       });
       statObserver.unobserve(entry.target);
